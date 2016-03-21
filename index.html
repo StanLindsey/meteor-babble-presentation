@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to Meteor.js</title>
+		<link rel="icon" href="https://meteor.com/favicon.png" type="image/png">
+
+		<meta name="description" content="An Introduction to Meteor.js">
+		<meta name="author" content="Stan Lindsey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+    <style>
+    ul li small {
+      vertical-align: middle !important;
+      font-size: 0.5em !important;
+    }
+
+    .reveal section img {
+      margin:0;
+      border:0;
+      background: initial;
+      margin-top: -0.8em;
+    }
+
+    #intro img {
+      position:relative;
+      bottom:-2em;
+    }
+    #intro h2 {
+      position: relative;
+      bottom:2em;
+    }
+    </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section id="intro">
+					<img width="700em" src="img/meteor-logo.svg"/>
+          <h2>An Introduction to</h2>
+					 <p>
+            <a href="http://twitter.com/stan_lindsey">@Stan_Lindsey</a>
+					</p>
+				</section>
+
+				<section id="what-is-meteor">
+					<h2>What is Meteor?</h2>
+          <ul>
+            <li class="fragment roll-in">A full-stack open source web framework <small> - Top 10 Starred </small></li>
+            <li class="fragment roll-in">100% Pure Isomorphic Javascript <small> - Same API Frontend & Backend</small></li>
+            <li class="fragment roll-in">Fully Reactive <small> - Websockets, DDP, NodeJS</small></li>
+            <li class="fragment roll-in">Command Line Tool <small> - Package, Build & Deploy</small></li>
+            <li class="fragment roll-in">View Layer Agnostic <small> - Blaze, React, Angular</small></li>
+            <li class="fragment roll-in">Write Once, Deploy Everywhere <small> - Web, Mobile, Desktop</small></li>
+            <li class="fragment roll-in">Focus on the app, not the architecture</li>
+          </ul>
+
+          <aside class="notes">
+            <p>HANSOFT X had 98% code reuse</p>
+          </aside>
+				</section>
+
+				<section id="demo">
+					<h1>Lets Build Something</h1>
+        </section>
+
+      <section id="techy-conerns">
+          <h2>Techy Concerns</h2>
+          <ul>
+            <li class="fragment roll-in">Such 'Magic' <small> - Websockets, DDP, Oplog Tailing, Tracker</small></li>
+            <li class="fragment roll-in">Opinionatedish <small> - guide.meteor.com </small></li>
+            <li class="fragment roll-in">Databases <small> - Packages, Reactive GraphQL, Apollo</small></li>
+            <li class="fragment roll-in">Non-Single Page Apps <small> - Flowrouter, React Server Side Rendering, Prerender.io</small></li>
+            <li class="fragment roll-in">Scaling <small> - Its a Node App</small></li>
+            <li class="fragment roll-in">v1.3 <small> - ES2015 Modules, NPM, Testing </small></li>
+
+          <aside class="notes">
+            <p>CodeFights: 40K monthly active, 500K code exercutions per month, 150K total users</p>
+          </aside>
+
+          </ul>
+        </section>
+
+        <section id="resources">
+          <h2>Resources</h2>
+          <ul>
+            <li><strong>Install:</strong> <a href="https://www.meteor.com/install">meteor.com/install</a></li>
+            <li><strong>Docs:</strong> <a href="https://docs.meteor.com/">docs.meteor.com</a></li>
+            <li><strong>Guide:</strong> <a href="http://guide.meteor.com/">guide.meteor.com</a></li>
+            <li><strong>Forums:</strong> <a href="http://forums.meteor.com/">forums.meteor.com</a></li>
+            <li><strong>Projects:</strong> <a href="https://www.meteor.com/projects">meteor.com/projects</a></li>
+            <li><strong>Case Studies:</strong> <a href="https://www.meteor.com/case-studies">meteor.com/case-studies/</a></li>
+            <li><strong>Book:</strong> <a href="https://www.discovermeteor.com/">discovermeteor.com</a></li>
+          </ul>
+        </section>
+
+				<section id="thanks">
+					<h1>Thanks</h1>
+					<p>
+						<a href="http://twitter.com/stan_lindsey">@Stan_Lindsey</a>
+					</p>
+				</section>
+
+  		</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+        hideAddressBar: true,
+
+				theme: 'night', // themes avaiable in css/theme
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+        transitionSpeed: 'slow',
+
+				// Parallax scrolling
+				parallaxBackgroundImage: 'img/bg.png',
+				parallaxBackgroundSize: '1770px 1328px',
+			});
+
+		</script>
+
+
+
+	</body>
+</html>
